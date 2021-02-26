@@ -29,9 +29,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Build #Second step
-        run : |
+        run: |
           npm install
-          npm run-script deploy
+          npm run-script build
       - name : Deploy #Third Step
         uses : JamesIves/github-pages-deploy-action@releases/v3
         with:
