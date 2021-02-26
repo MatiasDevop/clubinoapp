@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "Deploy": "ng build --prod --base-href=/clubinoapp/"
+    "deploy": "ng build --prod --base-href=/clubinoapp/"
   },
   "private": true,
   "dependencies": {
