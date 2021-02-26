@@ -33,5 +33,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           base_href: /storemenu/
-          FOLDER: dist/storemenu
+          FOLDER: dist/clubinoapp
           
