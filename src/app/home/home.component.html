@@ -1,26 +1,47 @@
-<p>home workssss!</p>
-<mat-grid-list cols="3" rowHeight="3:5">
-    <mat-grid-tile></mat-grid-tile>
-    <mat-grid-tile>
-        <mat-card class="example-card">
-            <mat-card-header>
-              <div mat-card-avatar class="example-header-image"></div>
-              <mat-card-title>Shiba Inu</mat-card-title>
-              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-            <mat-card-content>
-              <p>
-                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                bred for hunting.
-              </p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="card" style="width: 26rem;">
+                <img class="card-img-top" src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h1>Nestor Matias</h1>
+                  <h2>FullStack Developer</h2>
+                </div>
+              </div>
+            <mat-card-content class="content-social">
+                <a mat-raised-button class="btn-social"><fa-icon [icon]="twitter" 
+                    size="3x" 
+                    [styles]="{'stroke': 'red', 'color': 'rgb(29, 161, 242)'}"
+                    ></fa-icon>LIKE</a>
+                  <a mat-raised-button class="btn-social"><fa-icon [icon]="gitHub" size="3x"></fa-icon><span>Follow me</span></a>
+                  <a mat-raised-button class="link-btn"><fa-icon [icon]="linkedin" size="3x"
+                    [styles]="{'stroke': 'red', 'color': '#0a66c2'}"></fa-icon><span class="linkdin">Follow me</span></a>
+                  <!-- <a mat-raised-button class="link-btn"><fa-icon [icon]="linkedin" size="3x"
+                        [styles]="{'stroke': 'red', 'color': '#0a66c2'}"></fa-icon><span class="linkdin">Follow me</span>
+                  </a>   -->
+                  <!-- <a mat-fab href="#" color="warn" aria-label="Example icon button with a home icon">
+                    <mat-icon svgIcon="thumbs-up"></mat-icon>
+                  </a> -->
             </mat-card-content>
-            <mat-card-actions>
-              <button mat-button>LIKE</button>
-              <button mat-button>SHARE</button>
-            </mat-card-actions>
-          </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile></mat-grid-tile>
-  </mat-grid-list>
+        </div>
+        <div class="col-md-3">
+
+            <!-- <span class="material-icons md-48">face</span> -->
+            <!-- <button mat-button style="padding: 1rem;">
+                <mat-icon style="width: 50px; height:30px"
+                          svgIcon="logo"></mat-icon> Login With Google
+                </button>  
+            <button mat-button style="padding: 1rem;">
+                    <mat-icon style="width: 50px; height:30px"
+                              svgIcon="github"></mat-icon> Login With Google
+            </button>  -->
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+            </div>
+        </div>
+    </div>
+</div>
+
