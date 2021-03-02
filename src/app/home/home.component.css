@@ -60,6 +60,13 @@
     /* color: azure; */
   }
 
+  .dashboard-card {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+  }
   @media (max-width: 576px) {
     .content-social {
       margin: 0px;
