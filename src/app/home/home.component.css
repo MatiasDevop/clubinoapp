@@ -60,4 +60,9 @@
       padding-right: 18px;
       margin-inline: -15px;
     }
+    .card-img-top{
+      margin: 0em;
+      border-radius: 15em;
+      width: 171px;
+    }
 }
