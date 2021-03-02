@@ -59,11 +59,66 @@
     </div>
 </div>
 
-<div class="container">
-  <mat-grid-list cols="1" rowHeight="1:1">
-    <mat-grid-tile>1</mat-grid-tile>
-    <mat-grid-tile>2</mat-grid-tile>
-    
+<div >
+  <mat-grid-list [cols]="breakpoint" rowHeight="2:1" (window:resize)="onResize($event)">
+    <mat-grid-tile [colspan]="1">
+      <ul>
+        <li>
+          <mat-progress-bar
+        class="example-margin"
+        [color]="color"
+        [mode]="mode"
+        [value]="value"
+        [bufferValue]="bufferValue">
+    </mat-progress-bar>
+        </li>
+        <li><mat-progress-bar
+          class="example-margin"
+          [color]="color"
+          [mode]="mode"
+          [value]="value"
+          [bufferValue]="bufferValue">
+      </mat-progress-bar></li>
+        <li>Lorem 
+          <mat-progress-bar
+        class="example-margin"
+        [color]="color"
+        [mode]="mode"
+        [value]="value"
+        [bufferValue]="bufferValue">
+    </mat-progress-bar>
+        </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      </ul>
+      
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1">
+      <mat-list role="list">
+        <mat-list-item role="listitem">Item 1</mat-list-item>
+        <mat-list-item role="listitem">Item 2</mat-list-item>
+        <mat-list-item role="listitem">Item 3</mat-list-item>
+      </mat-list>
+    <ul>
+      <li>
+        <mat-progress-bar
+        class="example-margin"
+        [color]="color"
+        [mode]="mode"
+        [value]="value"
+        [bufferValue]="bufferValue">
+    </mat-progress-bar>
+    </li>
+    <li>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        Lorem ipsum dolor sit amet, consectetu</li>
+    <li>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+          Lorem ipsum dolor sit amet, consectetu</li>  
+    </ul>
+      <!-- <mat-progress-bar mode="indeterminate"></mat-progress-bar> 
+      <hr>  
+         -->
+    </mat-grid-tile>
   </mat-grid-list>
 </div>
 

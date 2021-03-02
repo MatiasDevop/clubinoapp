@@ -19,6 +19,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -34,15 +35,16 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     HttpClientModule,
     LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatGridListModule,
-    MatCardModule,
-    MatMenuModule,
-    FontAwesomeModule
+    // MatToolbarModule,
+    // MatButtonModule,
+    // MatSidenavModule,
+    // MatIconModule,
+    // MatListModule,
+    // MatGridListModule,
+    // MatCardModule,
+    // MatMenuModule,
+    FontAwesomeModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

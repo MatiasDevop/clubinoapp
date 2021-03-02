@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemePalette } from '@angular/material/core';
 import { MatIconRegistry } from '@angular/material/icon';
+import { ProgressBarMode } from '@angular/material/progress-bar';
 import { DomSanitizer } from '@angular/platform-browser';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin, faMedium, faStackOverflow, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -28,6 +30,12 @@ export class HomeComponent implements OnInit {
   gitHub = faGithub;
   twitter = faTwitter;
   linkedin = faLinkedin;
+
+  color: ThemePalette = 'primary';
+  mode: ProgressBarMode = 'determinate';
+  value = 50;
+  bufferValue = 75;
+  breakpoint: number;
   constructor(private library: FaIconLibrary, iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     library.addIcons(faSquare, faCheckSquare, faSquare, faCheckSquare, faStackOverflow, faGithub, faMedium);
     iconRegistry.addSvgIconLiteral('thumbs-up', sanitizer.bypassSecurityTrustHtml(THUMBUP_ICON));
@@ -40,7 +48,12 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.breakpoint = (window.innerWidth <= 400) ? 1 : 2;
   }
+ 
+  onResize(event) {
+  this.breakpoint = (event.target.innerWidth <= 400) ? 1 : 2;
+}
 
 }
 
