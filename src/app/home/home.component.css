@@ -13,13 +13,14 @@
   }
   .card-body{
     text-align: center;
+    border: groove;
   }
   .card-img-top{
     align-self: center;
     width: 221px;
     border-radius: 36em;
     padding: 3em;
-    margin: 6em;
+    margin: 3em;
 }
   .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
