@@ -15,14 +15,12 @@
     text-align: center;
   }
   .card-img-top{
-    height: 250px;
-    width: auto;
+    align-self: center;
+    width: 221px;
     border-radius: 36em;
-   
     padding: 3em;
     margin: 6em;
-
-  }
+}
   .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
@@ -54,7 +52,7 @@
     /* color: azure; */
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
     .content-social {
       margin: 0px;
       margin-right: 10px;
