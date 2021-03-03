@@ -33,7 +33,13 @@ export class HomeComponent implements OnInit {
 
   color: ThemePalette = 'primary';
   mode: ProgressBarMode = 'determinate';
-  value = 50;
+  valueUx = 40;
+  valueW = 70;
+  valueF = 80;
+  valueB = 80;
+  valueC = 70;
+  valueL = 80;
+  valueT = 80;
   bufferValue = 75;
   breakpoint: number;
   constructor(private library: FaIconLibrary, iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {

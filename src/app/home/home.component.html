@@ -59,39 +59,54 @@
     </div>
 </div>
 
-<div >
+<div class="alert alert-dark" role="alert">
+  <h1 class="skill">Skills</h1>
+</div>
+<div>
   <mat-grid-list [cols]="breakpoint" rowHeight="2:1" (window:resize)="onResize($event)">
     <mat-grid-tile>
       <mat-card class="dashboard-card">
         <ul>
           <li>
+            Backend Development
             <mat-progress-bar
           class="example-margin"
           [color]="color"
           [mode]="mode"
-          [value]="value"
+          [value]="valueB"
           [bufferValue]="bufferValue">
       </mat-progress-bar>
           </li>
-          <li><mat-progress-bar
+          <li>
+           Web Application
+            <mat-progress-bar
             class="example-margin"
             [color]="color"
             [mode]="mode"
-            [value]="value"
+            [value]="valueW"
             [bufferValue]="bufferValue">
         </mat-progress-bar></li>
-          <li>Lorem 
+          <li>
+            Front End Developement
             <mat-progress-bar
-          class="example-margin"
-          [color]="color"
-          [mode]="mode"
-          [value]="value"
-          [bufferValue]="bufferValue">
-      </mat-progress-bar>
+            class="example-margin"
+            [color]="color"
+            [mode]="mode"
+            [value]="valueF"
+            [bufferValue]="bufferValue">
+            </mat-progress-bar>
           </li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>
+            UI/UX design
+            <mat-progress-bar
+            class="example-margin"
+            [color]="color"
+            [mode]="mode"
+            [value]="valueUx"
+            [bufferValue]="bufferValue">
+            </mat-progress-bar>
+          </li>
         </ul>
-        
       </mat-card>
       
     </mat-grid-tile>
@@ -99,20 +114,27 @@
       <mat-card class="dashboard-card">
         <ul>
           <li>
+            Communication
             <mat-progress-bar
             class="example-margin"
             [color]="color"
             [mode]="mode"
-            [value]="value"
+            [value]="valueC"
             [bufferValue]="bufferValue">
-        </mat-progress-bar>
-        </li>
-        <li>
-            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-            Lorem ipsum dolor sit amet, consectetu</li>
-        <li>
+          </mat-progress-bar>
+          </li>
+          <li>
+             <span>Team Work</span> 
+              <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+          </li>
+          <li>
+          LeaderShip
           <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-              Lorem ipsum dolor sit amet, consectetu</li>  
+             </li> 
+          <li>
+            Creativity
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+          </li>       
         </ul>
       </mat-card>
       

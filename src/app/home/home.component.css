@@ -67,6 +67,13 @@
     right: 15px;
     bottom: 15px;
   }
+  li {
+    padding: 20px;
+    margin: 3px;
+  }
+  .skill{
+    text-align: center;
+  }
   @media (max-width: 576px) {
     .content-social {
       margin: 0px;
@@ -78,5 +85,9 @@
       margin: 0em;
       border-radius: 15em;
       width: 171px;
+    }
+    li{
+      padding: 0px;
+      margin: 0px; 
     }
 }
