@@ -73,6 +73,8 @@
   li {
     padding: 20px;
     margin: 3px;
+    text-align: right;
+    contain: paint;
   }
 
   .section-skill {
