@@ -8,12 +8,15 @@
   .content-social a{
     
   }
+  .card{
+    border: blanchedalmond;
+  }
   .btn-social{
-     
+     background-color: black;
   }
   .card-body{
     text-align: center;
-    border: groove;
+    
   }
   .card-img-top{
     align-self: center;
@@ -70,6 +73,10 @@
   li {
     padding: 20px;
     margin: 3px;
+  }
+
+  .section-skill {
+    margin: 5em;
   }
   .skill{
     text-align: center;

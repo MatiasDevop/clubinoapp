@@ -37,9 +37,10 @@ export class HomeComponent implements OnInit {
   valueW = 70;
   valueF = 80;
   valueB = 80;
-  valueC = 70;
+  valueC = 90;
   valueL = 80;
   valueT = 80;
+  valueCR = 50;
   bufferValue = 75;
   breakpoint: number;
   constructor(private library: FaIconLibrary, iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {

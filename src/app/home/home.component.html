@@ -13,30 +13,40 @@
                 </div>
               </div>
             <div class="row content-social">
-                <div class="col-4">
-                  <a mat-raised-button class="btn-social"><fa-icon [icon]="twitter" 
-                    size="1x" 
-                    [styles]="{'stroke': 'red', 'color': 'rgb(29, 161, 242)'}"
-                    ></fa-icon>follow me</a>
-                </div>
-                <div class="col-4">
-                  <a mat-raised-button class="btn-social">
-                    <fa-icon [icon]="gitHub" size="1x"></fa-icon><span>Follow me</span></a>
-                </div>
-                <div class="col-4">
-                  <a mat-raised-button class="link-btn">
-                    <fa-icon [icon]="linkedin" size="1x"
-                    [styles]="{'stroke': 'red', 'color': '#0a66c2'}"></fa-icon><span class="linkdin">Follow me</span></a>
-                </div>
-               
-                  
-               
-                  <!-- <a mat-raised-button class="link-btn"><fa-icon [icon]="linkedin" size="3x"
-                        [styles]="{'stroke': 'red', 'color': '#0a66c2'}"></fa-icon><span class="linkdin">Follow me</span>
-                  </a>   -->
+                <div class="col-3">
                   <!-- <a mat-fab href="#" color="warn" aria-label="Example icon button with a home icon">
                     <mat-icon svgIcon="thumbs-up"></mat-icon>
                   </a> -->
+                  <a mat-fab class="btn-social"><fa-icon [icon]="twitter" 
+                    size="2x" 
+                    [styles]="{'stroke': 'black', 'color': 'rgb(41, 148, 197)'}"
+                    ></fa-icon></a>
+                </div>
+                <div class="col-3">
+                  <a mat-fab class="btn-social"><fa-icon [icon]="gitHub" 
+                    size="2x" 
+                    [styles]="{'stroke': 'black', 'color': 'rgb(252, 252, 252)'}"
+                    ></fa-icon></a>
+                  <!-- <a mat-raised-button class="btn-social">
+                    <fa-icon [icon]="gitHub" size="1x"></fa-icon><span>Follow me</span></a> -->
+                </div>
+                <div class="col-3">
+                  <a mat-fab class="btn-social"><fa-icon [icon]="linkedin" 
+                    size="2x" 
+                    [styles]="{'stroke': 'black', 'color': 'rgb(17, 101, 227 )'}"
+                    ></fa-icon></a>
+                  <!-- <a mat-raised-button class="link-btn">
+                    <fa-icon [icon]="linkedin" size="1x"
+                    [styles]="{'stroke': 'red', 'color': '#0a66c2'}"></fa-icon><span class="linkdin">Follow me</span></a> -->
+                </div>
+               <div class="col-3">
+                  <a mat-fab class="btn-social"><fa-icon [icon]="faCoffee" 
+                    size="2x" 
+                    [styles]="{'stroke': 'black', 'color': 'rgb(75, 206, 118)'}"
+                    ></fa-icon></a>
+               </div>
+                  
+              
             </div>
         </div>
         <div class="col-md-3">
@@ -59,7 +69,7 @@
     </div>
 </div>
 
-<div class="alert alert-dark" role="alert">
+<div class="section-skill">
   <h1 class="skill">Skills</h1>
 </div>
 <div>
@@ -125,15 +135,33 @@
           </li>
           <li>
              <span>Team Work</span> 
-              <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+             <mat-progress-bar
+             class="example-margin"
+             [color]="color"
+             [mode]="mode"
+             [value]="valueT"
+             [bufferValue]="bufferValue">
+           </mat-progress-bar>
           </li>
           <li>
           LeaderShip
-          <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+          <mat-progress-bar
+          class="example-margin"
+          [color]="color"
+          [mode]="mode"
+          [value]="valueL"
+          [bufferValue]="bufferValue">
+        </mat-progress-bar>
              </li> 
           <li>
             Creativity
-            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+            <mat-progress-bar
+            class="example-margin"
+            [color]="color"
+            [mode]="mode"
+            [value]="valueCR"
+            [bufferValue]="bufferValue">
+          </mat-progress-bar>
           </li>       
         </ul>
       </mat-card>
