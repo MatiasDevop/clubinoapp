@@ -45,7 +45,7 @@
   }
   .timeline ul li:nth-child(odd){
     float:left;
-    text-align:left; /* you can use right */
+    text-align:right; /* you can use right */
     clear:both;
   }
   
@@ -87,7 +87,8 @@
   .timeline ul li:nth-child(odd) .left_content{
     position:absolute;
     top:12px;
-    right:-165px;
+    right:-17em;
+    left: 39em;
     margin:0;
     padding:8px 16px;
   
@@ -100,7 +101,7 @@
   .timeline ul li:nth-child(even) .left_content{
     position:absolute;
     top:12px;
-    left:-165px;
+    left:-252px;
     margin:0;
     padding:8px 16px;
     
