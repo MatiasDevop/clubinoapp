@@ -71,8 +71,8 @@
     bottom: 15px;
   }
   li {
-    padding: 20px;
-    margin: 3px;
+    /* padding: 20px;
+    margin: 3px; */
     text-align: right;
     contain: paint;
   }
