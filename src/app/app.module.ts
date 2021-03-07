@@ -20,6 +20,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SharedModule } from './shared/shared.module';
     HomeComponent,
     HeaderComponent,
     NavComponent,
-    DashboardComponent
+    DashboardComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
