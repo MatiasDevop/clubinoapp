@@ -69,6 +69,7 @@
     left: 15px;
     right: 15px;
     bottom: 15px;
+    height: -webkit-fill-available;
   }
   li {
     /* padding: 20px;
@@ -98,5 +99,9 @@
     li{
       padding: 0px;
       margin: 0px; 
+    }
+    h2.lead {
+      size: 6em;
+      max-height: 16px;
     }
 }
