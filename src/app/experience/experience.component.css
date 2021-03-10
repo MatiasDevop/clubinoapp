@@ -19,7 +19,8 @@
   }
   .timeline{
     position:relative;
-    margin: 50px auto;
+    margin: 30px auto;
+    margin-top: 10px;
     width:1000px;
     padding:50px 0;
   }
