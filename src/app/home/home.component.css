@@ -37,31 +37,15 @@
     background-size: cover;
     text-align: center;
   }
-  .link-btn {
-    /* background-color:#0a66c2;
-    background-repeat: no-repeat;
-    border: none; */
-    /* cursor:pointer;
-    overflow: hidden; */
-    /* outline:none; */
-    /* font-size: 0.8em;
-    padding: 0px; */
-  }
-  
-  .link-btn:hover {
-    background-color: transparent;
-    /* background-repeat: no-repeat; */
-    /* border: none; */
-    /* cursor:pointer;*/
-    /* overflow: hidden; 
-    outline:none;
-    pointer-events: none; */
-    /* font-size: 0.8em;
-    padding: 0px; */
-  }
-  .linkdin{
-    /* color: azure; */
-  }
+
+.card_profile{
+  padding: 18px;
+  margin-top: 50px;
+}
+
+.btn_download{
+  margin-inline: 11px;
+}
 
   .dashboard-card {
     position: absolute;
