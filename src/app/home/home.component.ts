@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
 import { ThemePalette } from '@angular/material/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { ProgressBarMode } from '@angular/material/progress-bar';
@@ -7,6 +8,7 @@ import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin, faMedium, faStackOverflow, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faCheckSquare, faSquare } from '@fortawesome/free-regular-svg-icons';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { map } from 'rxjs/operators';
 
 const THUMBUP_ICON = `
   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px">
@@ -43,7 +45,11 @@ export class HomeComponent implements OnInit {
   valueCR = 50;
   bufferValue = 75;
   breakpoint: number;
-  constructor(private library: FaIconLibrary, iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+  constructor(private library: FaIconLibrary,
+    iconRegistry: MatIconRegistry, 
+    sanitizer: DomSanitizer,
+    private store: AngularFirestore) {
+
     library.addIcons(faSquare, faCheckSquare, faSquare, faCheckSquare, faStackOverflow, faGithub, faMedium);
     iconRegistry.addSvgIconLiteral('thumbs-up', sanitizer.bypassSecurityTrustHtml(THUMBUP_ICON));
     iconRegistry.addSvgIcon(
@@ -54,8 +60,13 @@ export class HomeComponent implements OnInit {
         sanitizer.bypassSecurityTrustHtml(githubs));
   }
 
+  listTodo:any[];
+
   ngOnInit(): void {
     this.breakpoint = (window.innerWidth <= 400) ? 1 : 2;
+    this.store.collection('todo').snapshotChanges()
+    .subscribe(res =>(this.listTodo = res));
+    console.log("hey todo" + this.listTodo );
   }
  
   onResize(event) {

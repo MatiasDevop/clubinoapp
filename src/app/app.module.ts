@@ -22,7 +22,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { ExperienceComponent } from './experience/experience.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,16 +43,12 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     BrowserAnimationsModule,
     HttpClientModule,
     LayoutModule,
-    // MatToolbarModule,
-    // MatButtonModule,
-    // MatSidenavModule,
-    // MatIconModule,
-    // MatListModule,
-    // MatGridListModule,
-    // MatCardModule,
-    // MatMenuModule,
     FontAwesomeModule,
-    SharedModule
+    SharedModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig, 'myngsite'),
+    AngularFirestoreModule, // Only required for database features
+    AngularFireAuthModule, // Only required for auth features,
+    AngularFireStorageModule // Only required for storage features
   ],
   providers: [],
   bootstrap: [AppComponent]
