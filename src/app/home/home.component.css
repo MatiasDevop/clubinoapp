@@ -43,8 +43,44 @@
   margin-top: 50px;
 }
 
+.card_profile li{
+  
+    font-size: large;
+    font-family: sans-serif;
+}
+.card_profile span{
+  float: left;
+  background-color: crimson;
+    color: white;
+}
+
+.card-title{
+  font-size: x-large;
+  font-family: inherit;
+  margin-right: 198px;
+}
+.card-subtitle{
+  text-align: initial;
+  font-size: large;
+    font-family: sans-serif;
+}
+
 .btn_download{
-  margin-inline: 11px;
+  margin-inline: 7px;
+  float: left;
+  background-color: #1c33af;
+    border-color: #100b63;
+    width: 10em;
+    height: 3em;
+    padding: 12px;
+}
+.btn_contact{
+  float: left;
+  color: #f8f9fa;
+  background-color: #6c757d;
+  width: 10em;
+    height: 3em;
+    padding: 12px;
 }
 
   .dashboard-card {
