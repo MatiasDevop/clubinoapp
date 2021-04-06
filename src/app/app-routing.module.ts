@@ -5,11 +5,20 @@ import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { SignInComponent } from './auth/sign-in/sign-in.component';
+import { SignUpComponent } from './auth/sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './auth/verify-email/verify-email.component';
 
 const routes: Routes =[
+  { path: '', redirectTo: '/sign-in', pathMatch: 'full'},
+  { path: 'sign-in', component: SignInComponent },
+  { path: 'register-user', component: SignUpComponent },
   {
-    path: '', component: HomeComponent 
+    path: 'home', component: HomeComponent 
   },
+  { path: 'forgot-password', component: ForgotPasswordComponent},
+  { path: 'verify-email-address', component: VerifyEmailComponent},
   { path: 'dashboard', component: DashboardComponent },
   {
     path: 'experience', component: ExperienceComponent
