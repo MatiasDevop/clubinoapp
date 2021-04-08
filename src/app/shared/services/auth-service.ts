@@ -34,7 +34,7 @@ export class AuthService {
          return this.afAuth.signInWithEmailAndPassword(email, password)
             .then((result) => {
                 this.ngZone.run(() =>{
-                    this.router.navigate(['home']);
+                    this.router.navigate(['dashboard']);
                 });
                 this.SetUserData(result.user);
             }).catch((error) => {
@@ -63,7 +63,7 @@ export class AuthService {
     }
 
     //reset Forgot password
-    ForgotPassowrd(passwordResetEmail){
+    ForgotPassword(passwordResetEmail){
         return this.afAuth.sendPasswordResetEmail(passwordResetEmail)
             .then(() => {
                 window.alert('pasword reset email sent, check your inbox.');
