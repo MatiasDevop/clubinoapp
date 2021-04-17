@@ -33,6 +33,9 @@ import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.
 import { VerifyEmailComponent } from './auth/verify-email/verify-email.component';
 import { AuthService } from './shared/services/auth-service';
 import { DialogItemComponent } from './portfolio/dialog-item/dialog-item.component';
+import { FormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +56,7 @@ import { DialogItemComponent } from './portfolio/dialog-item/dialog-item.compone
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FormsModule,
     LayoutModule,
     FontAwesomeModule,
     SharedModule,

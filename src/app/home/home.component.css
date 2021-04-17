@@ -129,4 +129,11 @@
       size: 6em;
       max-height: 16px;
     }
+
+    .btn_download{
+      width: 8em;
+    }
+    .btn_contact{
+      width: 7em;
+    }
 }
