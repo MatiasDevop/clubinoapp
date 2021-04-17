@@ -45,8 +45,8 @@
 
 .card_profile li{
   
-    font-size: large;
-    font-family: sans-serif;
+    font-size: small;
+    font-family: monospace;
 }
 .card_profile span{
   float: left;
@@ -55,9 +55,9 @@
 }
 
 .card-title{
-  font-size: x-large;
-  font-family: inherit;
-  margin-right: 198px;
+  font-size: large;
+  font-family: monospace;
+  text-align: justify;
 }
 .card-subtitle{
   text-align: initial;
@@ -65,6 +65,11 @@
     font-family: sans-serif;
 }
 
+.text-intro{
+  font-size: small;
+    font-family: monospace;
+    text-align: justify;
+}
 .btn_download{
   margin-inline: 7px;
   float: left;
