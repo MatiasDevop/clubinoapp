@@ -1,3 +1,4 @@
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { ThemePalette } from '@angular/material/core';
@@ -45,10 +46,12 @@ export class HomeComponent implements OnInit {
   valueCR = 50;
   bufferValue = 75;
   breakpoint: number;
+  public isMobile: boolean = false;
   constructor(private library: FaIconLibrary,
     iconRegistry: MatIconRegistry, 
     sanitizer: DomSanitizer,
-    private store: AngularFirestore) {
+    private store: AngularFirestore,
+    breakpointObserver: BreakpointObserver) {
 
     library.addIcons(faSquare, faCheckSquare, faSquare, faCheckSquare, faStackOverflow, faGithub, faMedium);
     iconRegistry.addSvgIconLiteral('thumbs-up', sanitizer.bypassSecurityTrustHtml(THUMBUP_ICON));
@@ -58,6 +61,12 @@ export class HomeComponent implements OnInit {
       iconRegistry.addSvgIconLiteral(
         "github",
         sanitizer.bypassSecurityTrustHtml(githubs));
+        // to set up mobile size
+        breakpointObserver.observe([
+          '(max-width: 599px)'
+        ]).subscribe(result => {
+          this.isMobile = result.matches;
+        });    
   }
 
   listTodo:any[];
@@ -69,10 +78,6 @@ export class HomeComponent implements OnInit {
     console.log("hey todo" + this.listTodo );
   }
  
-  onResize(event) {
-  this.breakpoint = (event.target.innerWidth <= 400) ? 1 : 2;
-}
-
 }
 
 const githubs = `

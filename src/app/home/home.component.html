@@ -109,8 +109,8 @@
 <div class="section-skill">
   <h1 class="skill">Skills</h1>
 </div>
-<div>
-  <mat-grid-list [cols]="breakpoint" rowHeight="2:1" (window:resize)="onResize($event)">
+<div class="grid-skill">
+  <mat-grid-list [cols]="isMobile ? 1 : 2">
     <mat-grid-tile>
       <mat-card class="dashboard-card">
         <ul>
@@ -158,7 +158,7 @@
       
     </mat-grid-tile>
     <mat-grid-tile>
-      <mat-card class="dashboard-card">
+      <mat-card class="dashboard-card2">
         <ul>
           <li>
             <h2 class="lead">Communiction</h2>

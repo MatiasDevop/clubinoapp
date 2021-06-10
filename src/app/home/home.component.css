@@ -87,15 +87,31 @@
     height: 3em;
     padding: 12px;
 }
-
+.grid-skill{
+  padding: auto;
+}
   .dashboard-card {
+    position: absolute;
+    /* top: 15px; */
+    left: 15px;
+    right: 15px;
+    /* bottom: 15px; */
+    /* height: -webkit-fill-available; */
+    padding-bottom: 4em;
+    padding-inline: 3em;
+  }
+
+  .dashboard-card2 {
     position: absolute;
     top: 15px;
     left: 15px;
     right: 15px;
-    bottom: 15px;
-    height: -webkit-fill-available;
+    /* bottom: 15px; */
+    /* height: -webkit-fill-available; */
+    padding-bottom: 4em;
+    padding-inline: 3em;
   }
+
   li {
     /* padding: 20px;
     margin: 3px; */
@@ -135,5 +151,9 @@
     }
     .btn_contact{
       width: 7em;
+    }
+    .grid-skill{
+      margin-top: -15em;
+      padding-top: 0px;
     }
 }
