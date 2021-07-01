@@ -10,6 +10,10 @@
   }
   .card{
     border: blanchedalmond;
+    padding: 2em;
+    box-shadow: 15px 15px 53px #223288;
+    border-radius: .5em;
+  
   }
   .btn-social{
      background-color: black;
@@ -41,12 +45,13 @@
 .card_profile{
   padding: 18px;
   margin-top: 50px;
+  box-shadow: none;
 }
 
 .card_profile li{
   
     font-size: small;
-    font-family: monospace;
+    font-family: 'Poppins';
 }
 .card_profile span{
   float: left;
@@ -56,36 +61,43 @@
 
 .card-title{
   font-size: large;
-  font-family: monospace;
+  font-family: 'Poppins';
   text-align: justify;
 }
 .card-subtitle{
   text-align: initial;
   font-size: large;
-    font-family: sans-serif;
+  font-family: 'Poppins';  
 }
 
 .text-intro{
   font-size: small;
-    font-family: monospace;
+  font-family: 'Poppins'; 
     text-align: justify;
 }
+.buttons{
+  display: flex;
+}
 .btn_download{
-  margin-inline: 7px;
-  float: left;
-  background-color: #1c33af;
-    border-color: #100b63;
-    width: 10em;
-    height: 3em;
-    padding: 12px;
+  padding: .5em 1em;
+  border-radius: .3em;
+  text-decoration: none;
+  background: #3f51b5;
+  margin-top: 1em;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  font-family: 'Poppins';
 }
 .btn_contact{
-  float: left;
-  color: #f8f9fa;
-  background-color: #6c757d;
-  width: 10em;
-    height: 3em;
-    padding: 12px;
+  padding: .5em 1em;
+  border-radius: .3em;
+  text-decoration: none;
+  margin-top: 1em;
+  display: inline-block;
+  color: #2428b1;
+  font-weight: bold;
+  font-family: 'Poppins';
 }
 .grid-skill{
   padding: auto;
