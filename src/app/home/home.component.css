@@ -49,14 +49,13 @@
 }
 
 .card_profile li{
-  
     font-size: small;
     font-family: 'Poppins';
+    float: right;
 }
 .card_profile span{
-  float: left;
-  background-color: crimson;
-    color: white;
+  color:black;
+  float: inherit;
 }
 
 .card-title{
@@ -79,8 +78,7 @@
   display: flex;
 }
 .btn_download{
-  padding: .5em 1em;
-  border-radius: .3em;
+ 
   text-decoration: none;
   background: #3f51b5;
   margin-top: 1em;
@@ -88,6 +86,11 @@
   color: white;
   font-weight: bold;
   font-family: 'Poppins';
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin:10px;
+  padding: 1em;
 }
 .btn_contact{
   padding: .5em 1em;
@@ -99,44 +102,10 @@
   font-weight: bold;
   font-family: 'Poppins';
 }
-.grid-skill{
-  padding: auto;
-}
-  .dashboard-card {
-    position: absolute;
-    /* top: 15px; */
-    left: 15px;
-    right: 15px;
-    /* bottom: 15px; */
-    /* height: -webkit-fill-available; */
-    padding-bottom: 4em;
-    padding-inline: 3em;
-  }
 
-  .dashboard-card2 {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    /* bottom: 15px; */
-    /* height: -webkit-fill-available; */
-    padding-bottom: 4em;
-    padding-inline: 3em;
-  }
+  
 
-  li {
-    /* padding: 20px;
-    margin: 3px; */
-    text-align: right;
-    contain: paint;
-  }
 
-  .section-skill {
-    margin: 5em;
-  }
-  .skill{
-    text-align: center;
-  }
   @media (max-width: 576px) {
     .content-social {
       margin: 0px;
@@ -159,13 +128,10 @@
     }
 
     .btn_download{
-      width: 8em;
+      /* width: 8em; */
     }
     .btn_contact{
-      width: 7em;
+      /* width: 7em; */
     }
-    .grid-skill{
-      margin-top: -15em;
-      padding-top: 0px;
-    }
+  
 }
