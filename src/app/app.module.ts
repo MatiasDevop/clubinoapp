@@ -34,6 +34,7 @@ import { VerifyEmailComponent } from './auth/verify-email/verify-email.component
 import { AuthService } from './shared/services/auth-service';
 import { DialogItemComponent } from './portfolio/dialog-item/dialog-item.component';
 import { FormsModule } from '@angular/forms';
+import { CartComponent } from './payment/cart/cart.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { FormsModule } from '@angular/forms';
     SignUpComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
-    DialogItemComponent
+    DialogItemComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

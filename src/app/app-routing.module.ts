@@ -10,6 +10,7 @@ import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './auth/verify-email/verify-email.component';
 import { AuthGuard } from './shared/guard/auth.guard';
+import { CartComponent } from './payment/cart/cart.component';
 
 const routes: Routes =[
   { path: '', redirectTo: '/sign-in', pathMatch: 'full'},
@@ -26,6 +27,9 @@ const routes: Routes =[
   },
   {
     path: 'portfolio', component: PortfolioComponent
+  },
+  {
+    path: 'payment', component: CartComponent
   }
 
 ];
