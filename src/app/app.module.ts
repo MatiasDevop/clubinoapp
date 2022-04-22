@@ -35,6 +35,8 @@ import { AuthService } from './shared/services/auth-service';
 import { DialogItemComponent } from './portfolio/dialog-item/dialog-item.component';
 import { FormsModule } from '@angular/forms';
 import { CartComponent } from './payment/cart/cart.component';
+import { EmitterparentComponent } from './components/emitterparent/emitterparent.component';
+import { EmitterchildComponent } from './components/emitterchild/emitterchild.component';
 
 
 @NgModule({
@@ -51,7 +53,9 @@ import { CartComponent } from './payment/cart/cart.component';
     ForgotPasswordComponent,
     VerifyEmailComponent,
     DialogItemComponent,
-    CartComponent
+    CartComponent,
+    EmitterparentComponent,
+    EmitterchildComponent
   ],
   imports: [
     BrowserModule,

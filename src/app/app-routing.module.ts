@@ -11,6 +11,8 @@ import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.
 import { VerifyEmailComponent } from './auth/verify-email/verify-email.component';
 import { AuthGuard } from './shared/guard/auth.guard';
 import { CartComponent } from './payment/cart/cart.component';
+import { EmitterparentComponent } from './components/emitterparent/emitterparent.component';
+import { EmitterchildComponent } from './components/emitterchild/emitterchild.component';
 
 const routes: Routes =[
   { path: '', redirectTo: '/sign-in', pathMatch: 'full'},
@@ -30,6 +32,12 @@ const routes: Routes =[
   },
   {
     path: 'payment', component: CartComponent
+  },
+  {
+    path: 'emitter', component: EmitterparentComponent
+  },
+  {
+    path: 'emitterchild', component: EmitterchildComponent
   }
 
 ];
